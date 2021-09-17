@@ -1,0 +1,54 @@
+﻿@using JackieSoft.SeatableNetCoreSdk.Domain
+@model SeatableWorkSpaceDetailModel
+@{
+    var model = ViewData["data"] as SeatableWorkSpaceDetailModel;
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>type</th>
+            <th>tables</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in model.WorkSpaceList)
+        {
+            <tr>
+                <td>@row.Id</td>
+                <td>@row.Name</td>
+                <td>@row.Type</td>
+                <td>
+                    @if (row.TableList != null)
+                    {
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>name</th>
+                                    <th>uuid</th>
+                                    <th>workspace_id</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var table in row.TableList)
+                                {
+                                    <tr>
+                                        <td>@table.Id</td>
+                                        <td>@table.Name</td>
+                                        <td>@table.UUID</td>
+                                        <td>
+                                            @table.WorkSpaceId
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

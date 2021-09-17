@@ -1,0 +1,47 @@
+﻿@using JackieSoft.SeatableNetCoreSdk.Domain
+@model RowBatchUpdateViewModel
+
+@{
+    ViewData["Title_"] = "更新多行";
+    var model = ViewData["data"] as SeatableRowListResponseModel;
+    var titles = ViewData["title"] as List<string>;
+    var result = ViewData["result"] as Dictionary<string, object>;
+}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">@ViewData["Title_"]</li>
+    </ol>
+</nav>
+<br />
+<div class="card">
+    <div class="card-body">
+        <form asp-controller="Row" asp-action="BatchUpdate" method="post">
+            <div class="form-group">
+                <label asp-for="TableName">表名</label>
+                <input type="text" class="form-control" asp-for="TableName" value="n8n-table" />
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        @foreach (var title in titles)
+                        {
+                            <th>@title</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var row in model.Rows)
+                    {
+                        <tr>
+                            @foreach (var title in titles)
+                            {
+                                <td>@row[title]</td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <button type="submit" class="btn btn-primary">提交请求</button>  结果:@result["success"]
+        </form>
+    </div>
+</div>

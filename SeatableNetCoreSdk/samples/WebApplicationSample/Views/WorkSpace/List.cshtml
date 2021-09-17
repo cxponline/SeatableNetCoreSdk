@@ -1,0 +1,25 @@
+﻿@using JackieSoft.SeatableNetCoreSdk.Domain
+@model SeatableWorkSpaceModel
+@{
+    var model = ViewData["data"] as SeatableWorkSpaceModel;
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>type</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in model.WorkSpaceList)
+        {
+            <tr>
+                <td>@row.Id</td>
+                <td>@row.Name</td>
+                <td>@row.Type</td>
+            </tr>
+        }
+    </tbody>
+</table>

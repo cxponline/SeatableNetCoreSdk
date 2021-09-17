@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<PackageId>JackieSoft.SeatableNetCoreSdk.DTableDb</PackageId>
+		<PackageTags>Seatable;SeaTable</PackageTags>
+		<AssemblyName>JackieSoft.SeatableNetCoreSdk.DTableDb</AssemblyName>
+		<RootNamespace>JackieSoft.SeatableNetCoreSdk.DTableDb</RootNamespace>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>	  
+		<ProjectReference Include="..\JackieSoft.SeatableNetCoreSdk.Shared\JackieSoft.SeatableNetCoreSdk.Shared.csproj" />
+	</ItemGroup>
+
+</Project>

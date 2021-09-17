@@ -1,0 +1,46 @@
+﻿
+@using JackieSoft.SeatableNetCoreSdk.Domain
+<table>
+    <tr>
+        <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Update">更新</a></td>
+        <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Append">追加</a></td>
+        <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Insert">插入</a></td>
+        <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="BatchAppend">追加多行</a></td>
+        <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="BatchUpdate">更新多行</a></td>
+        <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="GetRow">查询一行</a></td>
+        <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Lock">锁定行</a></td>
+        <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="UnLock">解锁行</a></td>
+        <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Delete">删除一行</a></td>
+        <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="BatchDelete">删除多行</a></td>
+    </tr>
+</table>
+@model SeatableRowListResponseModel
+
+
+<br />
+@{
+    var model = ViewData["data"] as SeatableRowListResponseModel;
+    var titles = ViewData["title"] as List<string>;
+}
+<table class="table">
+    <thead>
+        <tr>
+            @foreach (var title in titles)
+            {
+                <th>@title</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in model.Rows)
+        {
+            <tr>
+                @foreach (var title in titles)
+                {
+                    <th>@row[title]</th>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+

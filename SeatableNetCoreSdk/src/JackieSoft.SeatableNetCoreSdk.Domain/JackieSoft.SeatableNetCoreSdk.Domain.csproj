@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<PackageId>JackieSoft.SeatableNetCoreSdk.Domain</PackageId>
+		<PackageTags>Seatable;SeaTable</PackageTags>
+		<AssemblyName>JackieSoft.SeatableNetCoreSdk.Domain</AssemblyName>
+		<RootNamespace>JackieSoft.SeatableNetCoreSdk.Domain</RootNamespace>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+</Project>

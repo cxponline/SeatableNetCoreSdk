@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <table class="table">
+        <tr>
+            <td>Home</td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="AuthToken" asp-action="Index">登录</a></td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="WorkSpace" asp-action="BaseToken">Base Access Token</a></td>
+        </tr>
+        <tr>
+            <td>Base</td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="Base" asp-action="Index">查询Base</a></td>
+        </tr>
+        <tr>
+            <td>WorkSpace</td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="WorkSpace" asp-action="Detail">带明细</a></td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="WorkSpace" asp-action="List">不带明细</a></td>
+        </tr>
+        <tr>
+            <td>dtable-server</td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Index">追加一行</a></td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Index">更新一行</a></td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Index">插入一行</a></td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Index">追加多行</a></td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Index">更新多行</a></td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Index">查询一行</a></td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Index">锁定行</a></td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Index">解锁行</a></td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Index">删除一行</a></td>
+            <td><a class="nav-link text-dark" asp-area="" asp-controller="Row" asp-action="Index">删除多行</a></td>
+        </tr>
+    </table>
+
+</div>

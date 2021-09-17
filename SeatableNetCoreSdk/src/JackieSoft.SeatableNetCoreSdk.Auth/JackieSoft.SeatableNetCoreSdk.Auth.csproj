@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<PackageId>JackieSoft.SeatableNetCoreSdk.Auth</PackageId>
+		<PackageTags>Seatable;SeaTable</PackageTags>
+		<AssemblyName>JackieSoft.SeatableNetCoreSdk.Auth</AssemblyName>
+		<RootNamespace>JackieSoft.SeatableNetCoreSdk.Auth</RootNamespace>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>	  
+	  <ProjectReference Include="..\JackieSoft.SeatableNetCoreSdk.Shared\JackieSoft.SeatableNetCoreSdk.Shared.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-samples", "2-samples", "{68C1E8AC-3E31-43FC-ABBB-897C46EDDE41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-src", "1-src", "{4973ADC8-454A-4800-965C-DABE765E6E4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-solution-items", "0-solution-items", "{78F95EE6-1876-4F20-956C-C170D2250F3C}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		..\Directory.Build.props = ..\Directory.Build.props
+		..\FUNDING.md = ..\FUNDING.md
+		..\global.json = ..\global.json
+		..\LICENSE.md = ..\LICENSE.md
+		..\nuget.config = ..\nuget.config
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeatableNetCoreSdk", "src\JackieSoft.SeatableNetCoreSdk\JackieSoft.SeatableNetCoreSdk.csproj", "{D2B29DE4-89D9-4B23-A955-0C0D511EB24E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationSample", "samples\WebApplicationSample\WebApplicationSample.csproj", "{094C0952-B4F8-40A0-8D33-B7510C9D8612}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeatableNetCoreSdk.DTableServer", "src\JackieSoft.SeatableNetCoreSdk.DTableServer\JackieSoft.SeatableNetCoreSdk.DTableServer.csproj", "{25DCFA5B-8B05-4F9C-BCBD-F05C1D3F7F55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeatableNetCoreSdk.DTableWeb", "src\JackieSoft.SeatableNetCoreSdk.DTableWeb\JackieSoft.SeatableNetCoreSdk.DTableWeb.csproj", "{F8D0355C-E502-489A-B830-C936BAA9CD93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeatableNetCoreSdk.DTableDb", "src\JackieSoft.SeatableNetCoreSdk.DTableDb\JackieSoft.SeatableNetCoreSdk.DTableDb.csproj", "{2B087EFC-E0FC-4AFA-92EB-26EE668FD69F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeatableNetCoreSdk.DTableWeb.Admin", "src\JackieSoft.SeatableNetCoreSdk.DTableWeb.Admin\JackieSoft.SeatableNetCoreSdk.DTableWeb.Admin.csproj", "{412E4309-7927-468F-BE83-0D7467AF0257}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeatableNetCoreSdk.DTableWeb.Org", "src\JackieSoft.SeatableNetCoreSdk.DTableWeb.Org\JackieSoft.SeatableNetCoreSdk.DTableWeb.Org.csproj", "{EEB4942C-4012-49E8-87F6-F5C5FA5A6498}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeatableNetCoreSdk.Domain", "src\JackieSoft.SeatableNetCoreSdk.Domain\JackieSoft.SeatableNetCoreSdk.Domain.csproj", "{F961F5D0-EF7F-4B41-8FBD-4FF360DF9873}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeatableNetCoreSdk.Shared", "src\JackieSoft.SeatableNetCoreSdk.Shared\JackieSoft.SeatableNetCoreSdk.Shared.csproj", "{D887A07F-70FF-4062-BCD8-B73FF3850D28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeatableNetCoreSdk.Auth", "src\JackieSoft.SeatableNetCoreSdk.Auth\JackieSoft.SeatableNetCoreSdk.Auth.csproj", "{E4E58AD5-161C-4E4B-889A-02D3220B5C9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2B29DE4-89D9-4B23-A955-0C0D511EB24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B29DE4-89D9-4B23-A955-0C0D511EB24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B29DE4-89D9-4B23-A955-0C0D511EB24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B29DE4-89D9-4B23-A955-0C0D511EB24E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{094C0952-B4F8-40A0-8D33-B7510C9D8612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{094C0952-B4F8-40A0-8D33-B7510C9D8612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{094C0952-B4F8-40A0-8D33-B7510C9D8612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{094C0952-B4F8-40A0-8D33-B7510C9D8612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25DCFA5B-8B05-4F9C-BCBD-F05C1D3F7F55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25DCFA5B-8B05-4F9C-BCBD-F05C1D3F7F55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25DCFA5B-8B05-4F9C-BCBD-F05C1D3F7F55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25DCFA5B-8B05-4F9C-BCBD-F05C1D3F7F55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8D0355C-E502-489A-B830-C936BAA9CD93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8D0355C-E502-489A-B830-C936BAA9CD93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8D0355C-E502-489A-B830-C936BAA9CD93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8D0355C-E502-489A-B830-C936BAA9CD93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B087EFC-E0FC-4AFA-92EB-26EE668FD69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B087EFC-E0FC-4AFA-92EB-26EE668FD69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B087EFC-E0FC-4AFA-92EB-26EE668FD69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B087EFC-E0FC-4AFA-92EB-26EE668FD69F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{412E4309-7927-468F-BE83-0D7467AF0257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412E4309-7927-468F-BE83-0D7467AF0257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412E4309-7927-468F-BE83-0D7467AF0257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412E4309-7927-468F-BE83-0D7467AF0257}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB4942C-4012-49E8-87F6-F5C5FA5A6498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB4942C-4012-49E8-87F6-F5C5FA5A6498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB4942C-4012-49E8-87F6-F5C5FA5A6498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB4942C-4012-49E8-87F6-F5C5FA5A6498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F961F5D0-EF7F-4B41-8FBD-4FF360DF9873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F961F5D0-EF7F-4B41-8FBD-4FF360DF9873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F961F5D0-EF7F-4B41-8FBD-4FF360DF9873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F961F5D0-EF7F-4B41-8FBD-4FF360DF9873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D887A07F-70FF-4062-BCD8-B73FF3850D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D887A07F-70FF-4062-BCD8-B73FF3850D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D887A07F-70FF-4062-BCD8-B73FF3850D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D887A07F-70FF-4062-BCD8-B73FF3850D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E58AD5-161C-4E4B-889A-02D3220B5C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E58AD5-161C-4E4B-889A-02D3220B5C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E58AD5-161C-4E4B-889A-02D3220B5C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E58AD5-161C-4E4B-889A-02D3220B5C9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2B29DE4-89D9-4B23-A955-0C0D511EB24E} = {4973ADC8-454A-4800-965C-DABE765E6E4E}
+		{094C0952-B4F8-40A0-8D33-B7510C9D8612} = {68C1E8AC-3E31-43FC-ABBB-897C46EDDE41}
+		{25DCFA5B-8B05-4F9C-BCBD-F05C1D3F7F55} = {4973ADC8-454A-4800-965C-DABE765E6E4E}
+		{F8D0355C-E502-489A-B830-C936BAA9CD93} = {4973ADC8-454A-4800-965C-DABE765E6E4E}
+		{2B087EFC-E0FC-4AFA-92EB-26EE668FD69F} = {4973ADC8-454A-4800-965C-DABE765E6E4E}
+		{412E4309-7927-468F-BE83-0D7467AF0257} = {4973ADC8-454A-4800-965C-DABE765E6E4E}
+		{EEB4942C-4012-49E8-87F6-F5C5FA5A6498} = {4973ADC8-454A-4800-965C-DABE765E6E4E}
+		{F961F5D0-EF7F-4B41-8FBD-4FF360DF9873} = {4973ADC8-454A-4800-965C-DABE765E6E4E}
+		{D887A07F-70FF-4062-BCD8-B73FF3850D28} = {4973ADC8-454A-4800-965C-DABE765E6E4E}
+		{E4E58AD5-161C-4E4B-889A-02D3220B5C9D} = {4973ADC8-454A-4800-965C-DABE765E6E4E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7ADF9AA7-7657-4AA8-993D-6DC166076714}
+	EndGlobalSection
+EndGlobal

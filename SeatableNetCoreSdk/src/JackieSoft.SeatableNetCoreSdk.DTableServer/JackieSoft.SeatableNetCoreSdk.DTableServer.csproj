@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<PackageId>JackieSoft.SeatableNetCoreSdk.DTableServer</PackageId>
+		<PackageTags>Seatable;SeaTable</PackageTags>
+		<AssemblyName>JackieSoft.SeatableNetCoreSdk.DTableServer</AssemblyName>
+		<RootNamespace>JackieSoft.SeatableNetCoreSdk.DTableServer</RootNamespace>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>	  
+		<ProjectReference Include="..\JackieSoft.SeatableNetCoreSdk.Shared\JackieSoft.SeatableNetCoreSdk.Shared.csproj" />
+	</ItemGroup>
+
+</Project>

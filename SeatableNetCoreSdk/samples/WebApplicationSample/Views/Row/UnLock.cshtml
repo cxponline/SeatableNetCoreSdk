@@ -1,0 +1,52 @@
+﻿@using JackieSoft.SeatableNetCoreSdk.Domain
+@model RowLockViewModel
+@{
+    ViewData["Title_"] = "解锁行";
+    var model = ViewData["data"] as SeatableRowListResponseModel;
+    var titles = ViewData["title"] as List<string>;
+    var result = ViewData["result"] as Dictionary<string, object>;
+}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">@ViewData["Title_"]</li>
+    </ol>
+</nav>
+<br />
+<div class="card">
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    @foreach (var title in titles)
+                    {
+                        <th>@title</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var row in model.Rows)
+                {
+                    <tr>
+                        @foreach (var title in titles)
+                        {
+                            <td>@row[title]</td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <form asp-controller="Row" asp-action="UnLock" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TableName"></label>
+                <input type="text" class="form-control" asp-for="TableName" value="" />
+            </div>
+            <div class="form-group">
+                <label asp-for="RowIds"></label>
+                <input type="text" class="form-control" asp-for="RowIds" value="" />
+            </div>
+            <button type="submit" class="btn btn-primary">提交请求</button>  结果:@result["success"]
+        </form>
+        <hr />
+    </div>
+</div>

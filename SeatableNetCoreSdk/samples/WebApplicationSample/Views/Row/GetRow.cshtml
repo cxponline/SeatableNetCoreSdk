@@ -1,0 +1,28 @@
+﻿@model RowGetViewModel
+@{
+    ViewData["Title"] = "查询一行";
+    var result = ViewData["data"] as Dictionary<string, object>;
+}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">@ViewData["Title"]</li>
+    </ol>
+</nav>
+<br />
+<div class="card">
+    <div class="card-body">
+        <form asp-controller="Row" asp-action="GetRow" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TableId"></label>
+                <input type="text" class="form-control" asp-for="TableId" value="" />
+            </div>
+            <div class="form-group">
+                <label asp-for="RowId"></label>
+                <input type="text" class="form-control" asp-for="RowId" value="" />
+            </div>
+            <button type="submit" class="btn btn-primary">提交请求</button>  结果:@result["_id"]
+        </form>
+        <hr />
+    </div>
+</div>

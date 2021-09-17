@@ -1,0 +1,26 @@
+﻿@using JackieSoft.SeatableNetCoreSdk.Domain
+@model SeatableBaseAccessTokenResponseModel
+@{
+    var row = ViewData["data"] as SeatableBaseAccessTokenResponseModel;
+}
+
+@{
+    <span>access_token:@row.AccessToken</span>
+    <br />
+    <span>
+        dtable_uuid:@row.DTableUuid
+    </span>
+    <br />
+    <span> dtable_server:@row.DtableServer </span>
+    <br />
+
+
+    <span>
+        dtable-db:@row.DTableDb
+    </span>
+
+    <br />
+    <span>
+        dtable_socket:@row.DTableSocket
+    </span>
+}

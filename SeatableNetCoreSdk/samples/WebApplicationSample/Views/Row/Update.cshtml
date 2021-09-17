@@ -1,0 +1,35 @@
+﻿@model RowUpdateViewModel
+@{
+    ViewData["Title"] = "更新一行";
+}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">@ViewData["Title"]</li>
+    </ol>
+</nav>
+<br />
+<div class="card">
+    <div class="card-body">
+        <form asp-controller="Row" asp-action="Update" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Field">字段名</label>
+                <input type="text" class="form-control" asp-for="Field" value="" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Value">字段值</label>
+                <input type="text" class="form-control" asp-for="Value" value="" />
+            </div>
+            <div class="form-group">
+                <label asp-for="TableName"></label>
+                <input type="text" class="form-control" asp-for="TableName" value="" />
+            </div>
+            <div class="form-group">
+                <label asp-for="RowId"></label>
+                <input type="text" class="form-control" asp-for="RowId" value="" />
+            </div>
+            <button type="submit" class="btn btn-primary">提交请求</button>  结果:@ViewData["success"]
+        </form>
+        <hr />
+    </div>
+</div>

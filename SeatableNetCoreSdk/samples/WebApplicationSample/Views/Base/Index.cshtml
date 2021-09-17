@@ -1,0 +1,12 @@
+﻿@using JackieSoft.SeatableNetCoreSdk.Domain
+
+
+<br />
+@{
+    var model = ViewData["data"] as Dictionary<string, object>;
+}
+@foreach (var dic in model)
+{
+    <span>@dic.Key+":"+@dic.Value</span>
+    <br />
+}
